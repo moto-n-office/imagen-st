@@ -103,7 +103,14 @@ with col2:
         )
     else:
         st.info("プロンプトを入力して「画像を生成」ボタンをクリックしてください")
-
+        
+# app.pyの最後に追加
+if __name__ == "__main__":
+    # 環境変数PORTの値を取得（デフォルトは8501）
+    import os
+    port = int(os.environ.get("PORT", 8501))
+    # この部分は実際には使用されませんが、デバッグ情報として追加
+    print(f"Configured to listen on port {port}")
 # フッター
 st.markdown("---")
 st.markdown("Powered by Google Vertex AI Gemini 2.0")
