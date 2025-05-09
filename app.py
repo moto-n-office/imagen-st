@@ -22,7 +22,7 @@ with st.sidebar:
     st.header("API設定")
     api_url = st.text_input(
         "API URL", 
-        value="https://gemini-api-xxxxxx-uc.a.run.app/generate-image",
+        value="/generate",
         help="画像生成APIのエンドポイントURL"
     )
     
