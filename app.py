@@ -150,10 +150,6 @@ with col2:
     else:
         st.info("プロンプトを入力して「画像を生成」ボタンをクリックしてください")
 
-# フッター
-st.markdown("---")
-st.markdown("Powered by Google Vertex AI Gemini 2.0")
-
 # app.pyの最後に追加
 if __name__ == "__main__":
     # 環境変数PORTの値を取得（デフォルトは8501）
